@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<!-- Set the language for the website to English -->
+<html lang="en">
+
+<head> 
+    <!-- Use the UTF-8 character set unicode for HTML5 -->
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thabiso Ngwenya">
+
+    <!-- Display logo on the title bar -->
+    <link rel="icon" href="logo/download.png" type="image/jpg"> 
+
+    <!-- Connect CSS file for styling  -->
+    <link rel="stylesheet" href="styling.css" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+    <!-- Connect Javascript file for dynamic webpages  -->
+    <script type="text/javascript" src="Javascript.js" ></script>
+
+    <!-- title bar -->
+    <title>DADAS MOTORLAND | Driving Passion</title>
+
+</head>
+<style>
+
+    /* Styling Page for In-Line Styling */
+    
+    #showroom-range{
+      /* background-image: url(logo/logo.jpeg); */
+      padding-top:2cm;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(10cm,10cm));
+      gap: 80px;
+      margin-bottom: 2cm;
+    }
+    
+    #showroom-range #box{
+      background-color: white;
+      border: 3px solid yellow;
+      padding:10px
+    }
+    
+    #showroom-range #box img{
+       width:11.5cm;
+     height: 8.5cm;
+    }
+    
+    #showroom-range #box span{
+      font-size: 20px;
+      color: darkslategrey;
+        padding-right:50px
+    }
+    #showroom-range #box button{
+      background-color: darkslategrey;
+      color:white;
+     padding: 8px;
+     margin: 10px;
+     border-radius: 4px;
+     border: none;
+     width: 100px;
+     
+    }
+    #showroom-range #box button:hover{
+    background-color: yellow;
+    color:darkslategrey;
+    letter-spacing: 1px;
+    }
+    
+    #showroom-range #box #icons{
+    padding-right:500px;
+    }
+    
+    #showroom-range #box #icons img{
+      background-color: transparent;
+      border-radius: 0%;
+    height:25px;
+    width:25px;
+    padding-left: 8px;
+    }
+    /* Styling Page for In-Line Styling */
+</style>
+
+<body>
+<header>
+
+  <!-- navigation bar -->
+  <div id="navigation"> 
+    <img src="logo/logo3.jpg" height="60px" width="130px">
+    <a href="Home.html"><img src="Icons/home.png"> Home</a>
+    <a href="#" id="active"><img src="Icons/vehicles.png">Showrooms</a>
+    <a href="About Us.html"><img src="Icons/about-us.png"> About Us</a>
+    <a href="Home.html"><img src="Icons/form.png">Form</a>
+  </div>
+
+  <!-- navigation bar icons -->
+  <div id="icons">
+    <a href="#"><img src="Icons/search.png"></a>
+    <a href="#"><img src="Icons/shopping-cart.png"></a>
+    <a href="#"><img src="Icons/menu-bar.png" ></a> 
+  </div>
+
+</header>
+<section>
+
+<!-- The Dadas Motorland showrooms with vast luxury cars for our clients -->
+<div id="showroom-range"> 
+
+  <div id="box">
+    <img src="SUV/Bentayga.jpg">
+
+    <div id="icons">
+      <img src="icons/eye.png">
+      <img src="icons/heart-icon_34407.png">
+    </div>       
+
+    <h3>Bentley Bentayga Speed</h3>
+    <span>R6 450 000</span>
+    <button id="Bentayga" onclick="computeTotalDue()">Add to Cart</button>
+  </div>
+
+  <div id="box">
+    <img src="SUV/Range Rover.jpg">
+
+    <div id="icons">
+      <img src="icons/eye.png">
+      <img src="icons/heart-icon_34407.png">
+    </div>  
+
+    <h3>Land Rover Range Rover SV</h3>
+    <span>R3 920 000</span>
+    <button id="Range Rover" onclick="computeTotalDue()">Add to Cart</button>
+  </div>
+
+  <div id="box">
+    <img src="SUV/Range Rover Sport.jpg">
+
+    <div id="icons">
+      <img src="icons/eye.png">
+      <img src="icons/heart-icon_34407.png">
+    </div>  
+  
+    <h3>Land Rover Range Rover Sport SVR Ultimate Edition</h3>
+    <span>R2 831 000</span>
+    <button id="Range Rover Sport" onclick="computeTotalDue()">Add to Cart</button>
+  </div>
+
+  <div id="box">
+    <img src="SUV/G63 AMG.jpg">
+
+    <div id="icons">
+      <img src="icons/eye.png">
+      <img src="icons/heart-icon_34407.png">
+    </div>  
+    
+    <h3>Mercedes-AMG G 63</h3>
+    <span>R4 299 000</span>
+    <button id="G63" onclick="computeTotalDue()">Add to Cart</button>
+  </div>
+
+  <div id="box">
+    <img src="SUV/Cullinan.jpg">
+
+    <div id="icons">
+      <img src="icons/eye.png">
+      <img src="icons/heart-icon_34407.png">
+    </div>  
+  
+    <h3>Rolls Royce Cullinan Black Badge</h3>
+    <span>R15 000 000</span>
+    <button id="Cullinan" onclick="computeTotalDue()">Add to Cart</button>
+  </div>
+
+  <div id="box" style="height: 1.5cm; margin-top: 5cm;">
+    <button id="Iteration" onclick="iteration()">Iteration</button>
+  </div>
+
+</div>
+
+</section>
+<footer>
+
+  <!-- navigation footer -->
+<div id="footer">
+  <div id="nav">
+
+    <h3> NAVIGATION</h3>
+    <div id="nav-container">   
+
+      <div id="nav-left"> 
+        <ol>
+        <li><a href="Home.html" > Home</a></li>
+        <li><a href="Home.html" >Showrooms</a></li>
+        <li><a href="About Us.html" > About Us</a></li>
+        <li><a href="Home.html" > Form</a></li>
+        </ol>
+      </div>      
+
+      <div id="nav-right"> 
+        <ol>
+        <li><a href="Gold.html" > Gold Showroom</a></li>
+        <li><a href="Silver.html" >Silver Showroom</a></li>
+        <li><a href="#" > Yellow Showroom</a></li>
+        <li><a href="Home.html" > Classic Showroom</a></li>
+        </ol>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- contact details, address & operating hours -->
+  <div id="contact">
+
+    <h3> CONTACT BENONI</h3> 
+    <div id="contact-container">
+    
+      <div id="contact-left">
+        <ol>
+        <li> <b>Address</b> </li>
+        <li> 30 Ampthill Avenue</li>
+        <li> Benoni, Gauteng, 1501</li>
+        
+        <li> <b>Call us:</b></li>
+        <li> 011 422 2299 / 08600</li>
+        <li> DADAS (32327)</li>
+         </ol>
+      </div>
+
+     <div id="contact-right">
+       <ol>        
+        <li> <b>Mon-Thurs:</b> 8:00 AM - 5:30 PM </li>
+        <li> <b>Fri:</b> 8:00 AM - 12:00 PM | 2:00 PM - 5:00 PM</li>
+        <li> <b>Sat:</b> 8:00 AM - 13:30 PM</li>
+        <li> <b>Sun:</b> Closed</li>
+       </ol>
+      </div>
+
+    </div>
+   </div>
+</div>
+
+<div id="footer-container">
+  
+  <!-- Social media links -->
+  <ul id="social-media">
+    <li><a href="https://www.facebook.com/dadasmotorlandsa/"> <img src="logo/facebook.png" ></a></li>
+    <li><a href="https://www.instagram.com/dadasmotorlandza"> <img src="logo/instagram.png"> </a></li>
+    <li><a href="https://mobile.twitter.com/dadas_za"> <img src="logo/twitter.png"> </a></li>
+    <li><a href="#"> <img src="logo/whatsapp.png"> </a></li>      
+  </ul>
+
+  <div id="footer-text">            
+    <p class="copyright">&copy; 2022 Thabiso Ngwenya. All Rights Reserved.</p>
+ </div>
+
+</div>
+</footer>  
+
+</body>
+</html>
